@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/island_pill"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:minWidth="220dp"
+        android:background="@drawable/dynamic_island_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Left Half: Stop Zone -->
+        <FrameLayout
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingStart="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="#FFFFFFFF" />
+        </FrameLayout>
+
+        <!-- Center: Text Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/island_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminder"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/island_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap side to act"
+                android:textColor="#B3FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <!-- Right Half: Repeat Zone -->
+        <FrameLayout
+            android:id="@+id/btn_repeat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@android:drawable/stat_notify_sync"
+                android:tint="#FFFFFFFF" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
