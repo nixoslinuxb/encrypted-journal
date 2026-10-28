@@ -41,5 +41,4 @@ The app targets `minSdk 36` / `compileSdk 37`.
 
 ## License
 
-No license has been added yet. Add one before accepting third-party
-contributions.
+MIT — see [LICENSE](LICENSE).
